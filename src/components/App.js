@@ -35,6 +35,7 @@ const App = () => {
   }
   const handleStart=(e)=>{
     setTimerOn(!timerOn)
+    setResetFlag(false)
   }
   const handleReset=()=>{
     setTimerOn(false)
