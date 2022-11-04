@@ -22,11 +22,15 @@ const App = () => {
     return m+":"+s;
   }
   const setDuration=(e)=>{
+    if(workDuration>0 && breakDuration>0){
     e.preventDefault();
     setResetFlag(false)
     setType('work')
     setWorkSecond(workDuration*60)
     setBreakSecond(breakDuration*60)
+    }else{
+      alert("time should be greater than zero.")
+    }
 
   }
   const handleStart=(e)=>{
