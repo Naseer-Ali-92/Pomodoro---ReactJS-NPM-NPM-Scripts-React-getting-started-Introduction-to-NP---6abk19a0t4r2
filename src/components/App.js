@@ -4,7 +4,7 @@ import '../styles/App.css';
 const App = () => {
   const[workDuration,setWorkDuration] = useState(25)
   const[breakDuration,setBreakDuration] = useState(5)
-  const[workSecond,setWorkSecond]=useState(1400)
+  const[workSecond,setWorkSecond]=useState(1500)
   const[breakSecond,setBreakSecond]=useState(300)
   const[type, setType]=useState("work")
   const[resetFlag,setResetFlag]=useState(true)
