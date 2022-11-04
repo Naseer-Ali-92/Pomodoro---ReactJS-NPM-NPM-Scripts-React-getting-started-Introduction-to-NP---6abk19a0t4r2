@@ -22,7 +22,7 @@ const App = () => {
     return m + ":" + s;
   }
   const setDuration = (e) => {
-    if (workDuration > 0 || breakDuration > 0) {
+    if (workDuration > 0 && breakDuration > 0) {
       e.preventDefault();
       setResetFlag(false)
       setType('work')
